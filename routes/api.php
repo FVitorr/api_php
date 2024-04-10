@@ -29,3 +29,9 @@ Route::get("/post/{id}",[PublicationController::class,"show"]);
 Route::put("/post/{id}",[PublicationController::class,"update"]);
 Route::post("/post",[PublicationController::class,"store"]);
 Route::delete("/post/{id}",[PublicationController::class,"destroy"]);
+
+Route::get("/friend",[PublicationController::class,"index"]);
+Route::get("/friend/{id}",[PublicationController::class,"show"]);
+Route::put("/friend/{id}",[PublicationController::class,"update"]);
+Route::post("/friend",[PublicationController::class,"store"]);
+Route::delete("/friend/{id}",[PublicationController::class,"destroy"]);
